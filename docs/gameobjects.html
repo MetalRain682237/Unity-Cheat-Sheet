@@ -27,8 +27,14 @@
         }
     </style>
     <div style="text-align: center;" class="btngroup">
-        <a id="GO"><button class="button">GameObjects</button></a><br>
+        <a id="DEF"><button class="button" onclick="defcmd();">Defining</button></a><br>
         <a id="GO"><button class="button"></button></a><br>
         <a id="GO"><button class="button"></button></a><br>
     </div>
+    <p id="txt"; style="color:white;font-size:20px;text-align:left;margin-left:10%;"></p>
+    <script>
+        function defcmd() {
+            document.getElementById("txt").innerText = "Defining Objects\n\nstatic {public} {variable} {variable name} - one instance of the object (it'll pretty much tell you when you need to use this)\npublic {variable} {variable name} - accessable by any script\nprivate {variable} {variable name} - only accessible by this script\nthis - the object the script is on\n\nObject Properties\n\nGameObject - simply get a game object\nText - text property of a game object";
+        }
+    </script>
 </body>
